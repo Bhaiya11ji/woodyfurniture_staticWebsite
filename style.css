@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    /* letter-spacing: 1px; */
+}
+
+/*in some places we have given font size in px unit and rem unit 
+px unit is absolute unit and rem unit is relative to our phone and html element
+so relative units helps us in creating responsive web pages*/
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #000000;
+}
+
+/* styling navbar code starts here  */
+nav {
+    display: flex; /* flex property help us in creating floating elements easily*/
+    justify-content: space-around; /*this will create equal amount of gap in between elements*/
+    align-items: center; /*this pair will align elements vertically*/
+    flex-wrap: wrap; /*on compressing or in less width elements will start to wrap*/
+    background-color: #f0932b;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    position: fixed; /*our navbar will be fixed at one position */
+    top: 0;
+    width: 100%; /*if we use fixed position then required amount of width will be used by element so 100%*/
+    z-index: 10;/*if didn't apply then frontSection will overlap navBar*/
+}
+
+.companyName {
+    font-size: 40px;
+    color: #fff;
+}
+
+.navList ul {
+    display: flex; 
+    list-style-type: none; /*by default list style is disc so we don't need disc*/
+}
+
+.navList ul li a {
+    font-size: 1.2rem; 
+    text-decoration: none; /*to remove underline*/
+    color: #fff;
+    padding: 10px;
+    transition: .5s ease-out; /*make the transition flawless*/
+}
+
+.navList ul li a:hover {/*what does hover means? - when we place our cursor on the
+    element then the state is called hovering over element so, this is special code for our
+    element when user cursor hover on the element*/
+    color: royalblue;
+}
+
+/* styling code for navList ends here  */
+
+
+/* first or front section styling code starts here  */
+
+.firstSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 600px; /*creating blank space */
+}
+#search {
+    font-size: 1.4rem;
+    padding: 10px 24px;
+    margin-top: 45px;
+    outline: none; /*by default outline have a 2px of value*/
+    border-style: none; /*by default value is inset so just for the bottom border we need to set it on none*/
+    border-bottom: 1px solid white;
+    background-color: transparent; /*most the element are transparent by default but not in case of input element*/
+}
+.nameBigWords {
+    color: #f0932b;
+    font-size: 3rem;
+}
+
+/* first or front section styling code ends here  */
+
+/* we have made most element in same manner so we can style them together via class */
+/* so most section are divided but are same in look  */
+
+
+/* so section style start fromm here  */
+
+.Section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 50px auto;
+}
+.sectionHead {
+    text-align: center;
+    color: #f0932b;
+    border-bottom: 2px solid #f0932b;
+    padding: 10px;
+    width: 50%;
+    margin: 50px auto;
+    font-size: 2rem;
+}
+
+/* so section style ends fromm here  */
+
+
+/* the product and customer reviews are displayed in form of cards 
+
+so both this is both section card style*/
+
+/* card style starts here  */
+
+.card {
+    width: 230px; /*same as the width of image*/
+    height: 320px;
+    text-align: center;
+    box-shadow: 3px 2px 6px sandybrown;
+    cursor: pointer; /*cursor will behave like its a link*/
+    margin: 50px auto;/*this will word when page wrap up*/
+    transition: .3s ease-out;
+}
+
+.card:hover {
+    box-shadow: 3px 3px 6px grey;
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.card img { /*this can also set individually to every image*/
+    width: 230px;
+    height: 200px;
+}
+
+.card p {
+    margin: 10px;
+    color: grey;
+}
+.viewProduct { /*this button is not present in customer review***/
+    border: none;/*button and input have some default styles that can be removed by setting them non*/
+    outline: none;
+    padding: 10px 12px;
+    background-color: #f0932b;
+    color: white;
+    cursor: pointer;
+}
+.customersReview .card p {
+    font-size: 16px;
+    color: grey;
+    margin: 10px;
+    font-style: italic; /*italic text means its a direct speech or its some other one's words*/
+}
+
+/* card style ends here  */
+
+
+/* last section are footer and contacts  */
+/* contact style starts here  */
+
+.contacts {
+    font-size: 1.1rem;
+    color: rgb(56, 56, 56);
+    text-align: center;
+    width: 300px; /*to align both the blocks we have set width to 300*/
+    margin: 20px 0px; /*again preparation for mobile screen*/
+}
+
+.contactForm {
+    width: 300px;
+    margin: 20px 0px;
+    text-align: center;
+}
+.inputField input{
+    margin: 10px auto;
+    outline: none;
+    border-style: none;
+    background: transparent; /*to remove white background*/
+    border-bottom: 1px solid white;
+    padding: 10px 12px;
+    border-radius: 2px; /*remove sharp corners*/
+    width: 250px;/*aligning to the size of block*/
+}
+
+#subscribeButton {
+    background-color: #f0932b;
+    outline: none;
+    border: none;
+    padding: 10px 12px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+span {
+    margin: 10px;
+}
+
+
+/* footer styling starts here  */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid grey;
+}
+
+footer i {
+    margin: 10px;
+    cursor: pointer;
+}
+
+/*small paragraph segment styling*/
+
+/* we have used paragraph at different position, but for less code we have given them a class 
+and can we styled together  */
+.infoSegment {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woody Furnitures</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- navigation html starts here  -->
+
+    <nav>
+        <div class="companyName">
+            Woody.com
+        </div>
+        <div class="navList">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- navigation html ends here  -->
+
+    <!-- firstSection or frontSeciton starts here  -->
+
+    <div class="firstSection">
+        <div class="nameBigWords">
+            Woody <sub>Furniture</sub>
+        </div>
+        <!-- for separiting elements and for better aproach to style code we often nest our code with div element  -->
+        <div class="searchBar">
+            <input placeholder="Search Here" id="search" type="text">
+        </div>
+    </div>
+
+    <!-- paragraph html ahead -->
+    <div class="infoSegment">
+        <p>WOODY FURNITUREs is Indian premium furniture brand in both home and institutional segments with
+            a strong commitment to sustainability and centres of excellence in design, manufacturing and retail.
+        </p>
+    </div>
+
+    <!-- firstsection ends here  -->
+
+
+    <!-- products section starts here  -->
+
+    <!-- dont overwrite or remove these span tags-->
+    <span id="products"></span>
+    <!-- this is the destination for our navigation links  -->
+    <p class="sectionHead">Products</p>
+    <div class="product Section">
+        <div class="card">
+            <img src="/product_image/pixway_chair.jpg" alt="">
+            <p>Wooden Chair</p>
+            <p>&#8377; 500</p>
+            <button class="viewProduct">View Product</button>
+        </div>
+        <div class="card">
+            <img src="/product_image/pixway_dining.jpg" alt="">
+            <p>Dining Table</p>
+            <p>&#8377; 10000</p>
+            <button class="viewProduct">View Product</button>
+
+        </div>
+        <div class="card">
+            <img src="/product_image/pixway_sof.jpg" alt="">
+            <p>Sofa set</p>
+            <p>&#8377; 12000</p>
+            <button class="viewProduct">View Product</button>
+
+        </div>
+    </div>
+
+
+    <!-- product section ends here  -->
+
+    <!-- small paragraph segment is added in between product and customer review  -->
+
+
+    <div class="infoSegment">
+        <p>Led by the largest in-house design team in the country in the furniture category and awarded with great
+            Professional. WOODY FURNITUREs aims to transform spaces with its thoughtfully designed furniture
+            to create brighter homes and offices with products that have the highest design quotient in aesthetics,
+            functionality and technology. With consistent pursuit of excellence and a special focus on health and
+            ergonomics, WOODY FURNITURE’s product portfolio comprises a massive range in the home, office
+            and other specialized applications</p>
+    </div>
+    <br>
+    <!-- for creating blank space or line in web page    -->
+    <br>
+    <div class="infoSegment">
+        <p>WOODY FURNITURE commitment to the environment has resulted in manufacturing products with
+            lesser carbon footprint. WOODY FURNITUREs has the widest range of green choices for our customers
+            which not only includes products but also services such as green interiors and recycling.
+        </p>
+    </div>
+
+    <!-- customer section starts here -->
+    <span id="reviews"></span>
+    <p class="sectionHead">Customer Reviews</p>
+    <div class="customersReview Section">
+        <div class="card">
+            <img src="/product_review_image/sofaset_review.jpg" alt="">
+            <p>"Comfortable. Nice look. Small and cute. However delivery was delayed by couple of days."</p>
+        </div>
+        <div class="card">
+            <img src="/product_review_image/table_unit_review.jpg" alt="">
+            <p>"Comfortable. Nice look. Small and cute. However delivery was delayed by couple of days."</p>
+        </div>
+        <div class="card">
+            <img src="/product_review_image/tv_unit_review.jpg" alt="">
+            <p>"Excellent Product and super comfort"</p>
+        </div>
+    </div>
+
+    <!-- customer review section ends here  -->
+
+    <p class="sectionHead">Contact us</p>
+    <div class="infoSegment">
+        <p>Currently present in over 430 cities with 52 company owned stores and over 800 dealers, WOODY
+            FURNITUREs is one of the largest divisions of WOODY.com</p>
+    </div>
+    <!-- contact seciton starts here  -->
+    <span id="contact"></span>
+    <div class="contact Section">
+        <div class="contacts">
+            <p>+91 1800 3280 1290</p>
+            <br>
+            <p>woodyfurnitures@gmail.com</p>
+        </div>
+        <div class="contactForm">
+            <form action="#">
+                <marquee behavior="scroll" direction="left">Get notification of sales and product, subscribe the
+                    newsletter.</marquee>
+                <div class="inputField">
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <div class="inputField">
+                    <input type="email" placeholder="Your Email">
+                </div>
+                <button id="subscribeButton">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- contact section ends here  -->
+
+    <!-- footer starts here  -->
+
+    <footer>
+        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+    </footer>
+</body>
+
+</html>
